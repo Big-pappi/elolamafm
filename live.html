@@ -11,64 +11,77 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css" />
     <style>
-        /* Custom Wave Animation */
-        .wave {
-            position: relative;
-            width: 100%;
-            height: 10px;
-            background: linear-gradient(to right, #4e73df, #36b9cc);
-            opacity: 0.7;
-            animation: waveAnimation 1s infinite ease-in-out;
+    body {
+        background-image: url('./img/pexels-george-webster-58778-213207.jpg'); /* Replace with your image path */
+        background-size: cover; /* Ensures the image covers the entire page */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents repeating the image */
+        height: 100vh; /* Full height of the viewport */
+    }
+
+    /* Custom Wave Animation */
+    .wave {
+        position: relative;
+        width: 100%;
+        height: 10px;
+        background: linear-gradient(to right, #4e73df, #36b9cc);
+        opacity: 0.7;
+        animation: waveAnimation 1s infinite ease-in-out;
+    }
+
+    @keyframes waveAnimation {
+        0% {
+            transform: scaleX(0.5);
         }
-
-        @keyframes waveAnimation {
-            0% {
-                transform: scaleX(0.5);
-            }
-            50% {
-                transform: scaleX(1);
-            }
-            100% {
-                transform: scaleX(0.5);
-            }
+        50% {
+            transform: scaleX(1);
         }
-
-        .audio-controls {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 20px;
+        100% {
+            transform: scaleX(0.5);
         }
+    }
 
-        .play-button {
-            font-size: 24px;
-            padding: 10px 20px;
-            background-color: #021bff; /* Red background */
-            color: white;
-            border: none;
-            border-radius: 50%;
-            cursor: pointer;
-        }
+    .audio-controls {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
 
-        .play-button:hover {
-            background-color: #e74c3c; /* Darker red on hover */
-        }
+    .play-button {
+        font-size: 24px;
+        padding: 10px 20px;
+        background-color: #021bff; /* Red background */
+        color: white;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+    }
 
-        .wave-container {
-            display: none;
-            margin-top: 20px;
-        }
+    .play-button:hover {
+        background-color: #e74c3c; /* Darker red on hover */
+    }
 
-        .wave.active {
-            display: block;
-        }
+    .wave-container {
+        display: none;
+        margin-top: 20px;
+    }
 
-        
+    .wave.active {
+        display: block;
+    }
 
+    /* Add transparency to the main container */
+    main.container {
+        background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+        padding: 20px;
+        border-radius: 10px;
+    }
 
-
-      
-    </style>
+    footer {
+        background: rgba(255, 0, 0, 0.8); /* Semi-transparent red footer */
+    }
+</style>
 </head>
 <body>
     <!-- Navbar -->
@@ -88,7 +101,7 @@
                 <div class="collapse navbar-collapse" id="radioNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="live.html"><i class="bi bi-broadcast"></i> Live Stream</a>
+                            <a class="nav-link active" href="index.html"><i class="bi bi-broadcast"></i> Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="schedule.html"><i class="bi bi-calendar"></i> Schedule</a>
@@ -118,7 +131,7 @@
     </header>
 
     <!-- Live Stream Section -->
-    <main class="container my-5">
+    <main class="container my-5" style="padding: 20px; background: rgba(255, 255, 255, 0.1); border-radius: 10px;">
         <h1 class="text-center mb-4">Listen Live</h1>
         <div class="row justify-content-center">
             <div class="col-md-8">
@@ -127,12 +140,12 @@
                     <i class="bi bi-play-circle-fill" id="playButton" style="font-size: 60px; color: red; cursor: pointer; box-shadow: 0 4px 10px rgba(255, 0, 0, 0.0);" 
                         onmouseover="this.style.color='#ff3333'" onmouseout="this.style.color='red'"></i>
                 </div>
-
+    
                 <!-- Wave Animation -->
                 <div class="wave-container" id="waveContainer">
                     <div class="wave"></div>
                 </div>
-
+    
                 <p class="text-center mt-3">Tune in live and enjoy the best programs on El Olama FM 100.3 MHz.</p>
             </div>
         </div>
