@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - El olama fm 100.3 MHz</title>
+    <link rel="icon" href="./img/icon.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-danger text-white py-3 fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.jpg" alt="Radio Logo" class="d-inline-block align-text-top me-2 rounded-circle" width="30" height="30">
+                    El Olama FM 100.3 MHz
+                </a>
+                <!-- Mobile Toggle Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#radioNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse" id="radioNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html"><i class="bi bi-house-door"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="live.html"><i class="bi bi-broadcast"></i> Live Stream</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="djs.html"><i class="bi bi-music-note-beamed"></i> Djs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="podcasts.html"><i class="bi bi-mic"></i> Podcasts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shows.html"><i class="bi bi-music-note-list"></i> Shows</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html"><i class="bi bi-calendar-event"></i> Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="programs.html"><i class="bi bi-music-note-list"></i> Programs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html"><i class="bi bi-images"></i> Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html"><i class="bi bi-info-circle"></i> About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html"><i class="bi bi-envelope"></i> Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about-section" class="py-5">
+            <div class="container">
+                <h1 class="text-center mb-5 animate-on-scroll">About El olama fm 100.3 MHz</h1>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="fw-bold mb-3 animate-on-scroll">Our Mission</h2>
+                        <p class="lead animate-on-scroll">El olama fm 100.3 MHz is dedicated to being the voice of Njombe, Tanzania, providing our listeners with diverse programs that entertain, inform, and connect the community.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="fw-bold mb-3 animate-on-scroll">Our Story</h2>
+                        <p class="lead animate-on-scroll">Founded in 2023, El olama fm has been the region's go-to radio station for news, music, and events. Over the years, we have grown to become an integral part of the Njombe community, with a mission to support local artists, organizations, and businesses.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5 animate-on-scroll">Meet the Team</h2>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col animate-on-scroll">
+                        <div class="card h-100">
+                            <img src="img/land.jpg" class="card-img-top" alt="Team Member 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Mr Chedy</h5>
+                                <p class="card-text">Station Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col animate-on-scroll">
+                        <div class="card h-100">
+                            <img src="img/land.jpg" class="card-img-top" alt="Team Member 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Jane</h5>
+                                <p class="card-text">Head of Programming</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col animate-on-scroll">
+                        <div class="card h-100">
+                            <img src="img/land.jpg" class="card-img-top" alt="Team Member 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Mary</h5>
+                                <p class="card-text">Broadcast Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-danger text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p>&copy; <span id="current-year"></span> El Olama FM 100.3 MHz. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="https://www.facebook.com/elolamafm?mibextid=ZbWKwL" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="https://x.com/elolamafm?t=q-uV2NEj8bbC6UAJTL9-pQ&s=09" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                    <a href="https://www.instagram.com/elolamafm?igsh=MWY2bTN0N3QyZHhrbQ==" class="text-white"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
