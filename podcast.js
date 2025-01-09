@@ -18,7 +18,7 @@ async function fetchPodcasts() {
 
         // If no cache or cache is old, fetch new data
         const response = await fetch(
-            `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${CHANNEL_ID}&part=snippet,id&order=date&maxResults=6`
+            `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${CHANNEL_ID}&part=snippet,id&order=date&maxResults=100`
         );
         const data = await response.json();
 
